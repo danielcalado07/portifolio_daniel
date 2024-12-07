@@ -15,10 +15,24 @@ import {
 } from "./styles";
 import ButtonLeaked from "../../components/Button/ButtonLeaked";
 import ButtonSolid from "../../components/Button/ButtonSolid";
+import { forwardRef } from "react";
 
-const about = () => {
+
+
+const about = forwardRef<HTMLDivElement>((_, refAbout) => {
+
+        const handleDownload = () => {
+          const fileUrl = '/DanieldaSilvaCalado.pdf';
+          const link = document.createElement('a');
+          link.href = fileUrl;
+          link.download = 'Daniel Calado CV.pdf';
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        };
+
     return (
-        <Container>
+        <Container ref = {refAbout}>
             <Image src={HeaderImage} alt="about" />
             <Presentation>
                 <Description>
@@ -26,11 +40,11 @@ const about = () => {
                         Oi, eu sou<br />Daniel Calado.
                     </H1Title>
                     <Subtitle>
-                        Programador Full-Stack & Analista de Qualidade (QA)
+                        Front-end | QA
                     </Subtitle>
                     <Buttons>
-                        <ButtonSolid variant="success">Currículo</ButtonSolid>
-                        <ButtonLeaked variant="success">Linkedin</ButtonLeaked>
+                        <ButtonSolid variant="success" onClick={handleDownload}>Currículo</ButtonSolid>
+                        <ButtonLeaked variant="success" onClick={() => window.open('https://www.linkedin.com/in/daniel-calado-a1950a159/')}>Linkedin</ButtonLeaked>
                     </Buttons>
                 </Description>
                 <ImagePerfil src={PerfilUser} alt="Perfil" />
@@ -53,5 +67,5 @@ const about = () => {
             </ContainerAbout>
         </Container>
     );
-}
+});
 export default about;

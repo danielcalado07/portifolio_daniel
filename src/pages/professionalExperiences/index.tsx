@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { forwardRef, useState } from "react";
 import { 
     Container, 
     ContainerExp, 
@@ -82,11 +82,11 @@ const ListExperiences = [
     }
 ];
 
-const ProfessionalExperiences = () => {
+const ProfessionalExperiences = forwardRef<HTMLDivElement>((_, ref) => {
     const [selectedExperience, setSelectedExperience] = useState(ListExperiences[0]);
 
     return (
-        <Container>
+        <Container ref = {ref}>
             <H1About>Experiências Profissionais</H1About>
             <ContainerTrue>
                 <ContainerExp>
@@ -111,6 +111,6 @@ const ProfessionalExperiences = () => {
             </ContainerTrue>
         </Container>
     );
-};
+});
 
 export default ProfessionalExperiences;

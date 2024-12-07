@@ -1,9 +1,10 @@
+import { forwardRef } from "react";
 import { IconCss, IconCypress, IconHtml, IconJava, IconNode, IconPostman, IconReact, IconSelenium, IconSwagger, IconTs } from "../../assets/images";
 import { Container, ContainerSkills, DescriptionSkills, H1About, Image, Skills } from "./styles";
 
-const technicalSkills = () => {
+const technicalSkills = forwardRef<HTMLDivElement>((_, ref) => {
     return (
-        <Container>
+        <Container ref = {ref}>
             <H1About>
                 Habilidades Técnicas
             </H1About>
@@ -51,6 +52,6 @@ const technicalSkills = () => {
         </ContainerSkills>
         </Container>
     );
-    }
+    });
 
 export default technicalSkills;

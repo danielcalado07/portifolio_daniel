@@ -14,6 +14,12 @@ import CertifSauter from './sauter_certificado.png';
 import CertifCompass from './compass_certificado.png';
 import CertifTestes from './udemy_testes_certificado.png';
 import CertifNest from './udemy_nest_certificado.png';
+import CertifGenAI from './GenAI.png';
+import CertifAI_Assisted from './AI-Assisted.png';
+import Linkedin from './linkedin.svg';
+import Github from './github.svg';
+import Email from './email.svg';
+
 export { 
     HeaderImage,
     PerfilUser,
@@ -30,5 +36,10 @@ export {
     CertifSauter,
     CertifCompass,
     CertifTestes,
-    CertifNest
+    CertifNest,
+    CertifGenAI,
+    CertifAI_Assisted,
+    Linkedin,
+    Github,
+    Email
 };
