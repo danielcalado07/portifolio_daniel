@@ -16,7 +16,7 @@ import CertifTestes from './udemy_testes_certificado.png';
 import CertifNest from './udemy_nest_certificado.png';
 import CertifGenAI from './GenAI.png';
 import CertifAI_Assisted from './AI-Assisted.png';
-import Linkedin from './linkedin.svg';
+import Linkedin from './Linkedin.svg';
 import Github from './github.svg';
 import Email from './email.svg';
 
