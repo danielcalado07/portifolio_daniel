@@ -17,8 +17,8 @@ import CertifNest from './udemy_nest_certificado.png';
 import CertifGenAI from './GenAI.png';
 import CertifAI_Assisted from './AI-Assisted.png';
 import Linkedin from './Linkedin.svg';
-import Github from './github.svg';
-import Email from './email.svg';
+import Github from './Github.svg';
+import Email from './Email.svg';
 
 export { 
     HeaderImage,
