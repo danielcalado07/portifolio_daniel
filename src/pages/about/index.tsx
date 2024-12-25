@@ -22,7 +22,7 @@ import { forwardRef } from "react";
 const about = forwardRef<HTMLDivElement>((_, refAbout) => {
 
         const handleDownload = () => {
-          const fileUrl = '/DanieldaSilvaCalado.pdf';
+          const fileUrl = '/DanielDaSilvaCalado.pdf';
           const link = document.createElement('a');
           link.href = fileUrl;
           link.download = 'Daniel Calado CV.pdf';
@@ -54,7 +54,7 @@ const about = forwardRef<HTMLDivElement>((_, refAbout) => {
                     Sobre mim
                 </H1About>
                 <DescriptionAbout>
-                    Sou programador full stack com experiência em diversas tecnologias e metodologias de
+                    Sou programador Front-End com experiência em diversas tecnologias e metodologias de
                     desenvolvimento. Tenho habilidades em <Span>JavaScript</Span>, <Span>Node.js</Span>, <Span>React</Span>,
                     <Span>HTML</Span> e <Span>MongoDB</Span>, o que me permite atuar
                     tanto no desenvolvimento de <Span>front-end</Span> quanto no <Span>back-end</Span>. Além disso, já atuei
