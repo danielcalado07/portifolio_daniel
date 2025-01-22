@@ -22,7 +22,7 @@ import { forwardRef } from "react";
 const about = forwardRef<HTMLDivElement>((_, refAbout) => {
 
         const handleDownload = () => {
-          const fileUrl = '/DanielDaSilvaCalado.pdf';
+          const fileUrl = '/danielcalado.pdf';
           const link = document.createElement('a');
           link.href = fileUrl;
           link.download = 'Daniel Calado CV.pdf';
