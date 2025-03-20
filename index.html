@@ -8,7 +8,18 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/primereact/resources/themes/lara-light-indigo/theme.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/primereact/resources/primereact.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/primeicons/primeicons.css" />
-
+  <script>
+    fetch("https://ipinfo.io/json?token=bb83f7f71fb096")
+      .then(response => response.json())
+      .then(data => {
+        const mensagem = `Seu site foi acessado por um usuário\nData: ${new Date().toLocaleString()}\nLocalização: ${data.city}, ${data.region}, ${data.country}\nLatitude/Longitude: ${data.loc}
+  `;
+  
+        fetch(`https://api.telegram.org/bot7586256197:AAFFDMKVkAgzd-bp4EgvLYWVc57d4MK8Ghk/sendMessage?chat_id=5473452695&text=${encodeURIComponent(mensagem)}`);
+      })
+      .catch(error => console.error("Erro ao obter localização:", error));
+  </script>  
+  
   <title>Portfólio | Daniel Calado</title>
 
   <style>
