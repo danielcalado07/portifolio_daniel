@@ -642,13 +642,17 @@ function App() {
             </div>
             <div className="flex gap-6">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/daniel-calado-a1950a159/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 dark:text-gray-500 hover:text-white transition-colors duration-300"
               >
                 <Linkedin className="w-6 h-6" />
               </a>
               <a
-                href="#"
+                href="https://github.com/danielcalado159"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 dark:text-gray-500 hover:text-white transition-colors duration-300"
               >
                 <Github className="w-6 h-6" />
