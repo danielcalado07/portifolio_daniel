@@ -74,7 +74,7 @@ function App() {
       description:
         "Plataforma de vendas de ingressos desenvolvida com Next.js e TypeScript. Interface responsiva com foco na experiência do usuário.",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-      image: "public/images/bannerTiketei.png",
+      image: "/images/bannerTiketei.png",
       liveUrl: "www.tiketei.com",
       status: "Em Produção",
     },
@@ -83,7 +83,7 @@ function App() {
       description:
         "Site de leilões para ONGs desenvolvido com React e TypeScript. Interface intuitiva e responsiva para diferentes dispositivos.",
       technologies: ["React", "TypeScript", "CSS3"],
-      image: "public/images/leiloame.png",
+      image: "/images/leiloame.png",
       liveUrl: "leiloame2.netlify.app",
       status: "Em Desenvolvimento",
     },
@@ -92,7 +92,7 @@ function App() {
       description:
         "Plataforma de vendas de carne premium desenvolvida com Next.js e TypeScript. Interface responsiva e otimizada para conversão.",
       technologies: ["Next", "Tailwind CSS", "TypeScript"],
-      image: "public/images/suprema.png",
+      image: "/images/suprema.png",
       liveUrl: "supremacharque.netlify.app/",
       status: "Em Desenvolvimento",
     },
@@ -101,7 +101,7 @@ function App() {
       description:
         "Projeto vinculado ao programa de aceleração Liga Labs, focado em soluções inovadoras.",
       technologies: ["Next", "Tailwind CSS", "TypeScript"],
-      image: "public/images/sds.png",
+      image: "/images/sds.png",
       liveUrl: "#",
       status: "Em Desenvolvimento",
     },
