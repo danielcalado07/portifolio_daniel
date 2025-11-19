@@ -93,8 +93,8 @@ function App() {
         "Plataforma de vendas de carne premium desenvolvida com Next.js e TypeScript. Interface responsiva e otimizada para conversão.",
       technologies: ["Next", "Tailwind CSS", "TypeScript"],
       image: "/images/suprema.png",
-      liveUrl: "supremacharque.netlify.app/",
-      status: "Em Desenvolvimento",
+      liveUrl: "www.supremacharque.com/",
+      status: "Em Produção",
     },
     {
       title: "Projeto Liga Labs",
@@ -103,6 +103,15 @@ function App() {
       technologies: ["Next", "Tailwind CSS", "TypeScript"],
       image: "/images/sds.png",
       liveUrl: "#",
+      status: "Em Desenvolvimento",
+    },
+    {
+      title: "Site Jatobá",
+      description:
+        "Site de refrigerantes Jatobá desenvolvido com Next.js e TypeScript. Design atraente e funcionalidade otimizada.",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+      image: "/images/jatoba.png",
+      liveUrl: "jatoba.netlify.app",
       status: "Em Desenvolvimento",
     },
   ];
@@ -117,7 +126,7 @@ function App() {
         "Desenvolvo e mantenho o front-end da Tiketei, uma plataforma de vendas de ingressos, utilizando Next.js e TypeScript. Trabalho na criação de interfaces responsivas, integração com APIs e otimização de desempenho para melhorar a experiência do usuário.",
     },
     {
-      period: "Fev 2024 - Presente",
+      period: "Fev 2024 - Dez 2025",
       role: "Desenvolvedor Front-End",
       company: "Instituto Federal de Pernambuco",
       location: "Remoto",
