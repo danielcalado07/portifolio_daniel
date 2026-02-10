@@ -55,7 +55,7 @@ function App() {
     },
     { name: "NodeJS", level: "Hábil", icon: <Database className="w-5 h-5" /> },
     { name: "NestJS", level: "Hábil", icon: <Code className="w-5 h-5" /> },
-    { name: "NextJs", level: "Hábil", icon: <Code className="w-5 h-5" /> },
+    { name: "NextJs", level: "Experiente", icon: <Code className="w-5 h-5" /> },
     {
       name: "Cypress",
       level: "Experiente",
@@ -85,7 +85,7 @@ function App() {
       technologies: ["React", "TypeScript", "CSS3"],
       image: "/images/leiloame.png",
       liveUrl: "leiloame2.netlify.app",
-      status: "Em Desenvolvimento",
+      status: "Finalizado",
     },
     {
       title: "Suprema Charque",
@@ -112,8 +112,17 @@ function App() {
       technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
       image: "/images/jatoba.png",
       liveUrl: "jatoba.netlify.app",
-      status: "Em Desenvolvimento",
+      status: "Finalizado",
     },
+    {
+      title: "Projeto de UPE Digital",
+      description:
+        "Projeto vinculado ao programa de aceleração Liga Labs, focado em soluções digitais para a Universidade de Pernambuco.",
+      technologies: ["Next", "Tailwind CSS", "TypeScript"],
+      image: "/images/upe-saude.png",
+      liveUrl: "#",
+      status: "Em Desenvolvimento",
+    }
   ];
 
   const experiences = [
@@ -406,7 +415,7 @@ function App() {
 
       {/* Experience Section */}
       <section
-        id="education"
+        id="experience"
         className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300"
       >
         <div className="max-w-6xl mx-auto px-6">
@@ -447,7 +456,7 @@ function App() {
 
       {/* Education Section */}
       <section
-        id="about"
+        id="education"
         className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300"
       >
         <div className="max-w-6xl mx-auto px-6">
@@ -487,7 +496,7 @@ function App() {
 
       {/* Projects Section */}
       <section
-        id="education"
+        id="projects"
         className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300"
       >
         <div className="max-w-6xl mx-auto px-6">
@@ -520,6 +529,8 @@ function App() {
                       className={`px-3 py-1 rounded-full text-sm font-semibold ${
                         project.status === "Em Produção"
                           ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300"
+                          : project.status === "Finalizado"
+                          ? "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300"
                           : "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300"
                       }`}
                     >
@@ -569,7 +580,7 @@ function App() {
 
       {/* Skills Section */}
       <section
-        id="about"
+        id="skills"
         className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300"
       >
         <div className="max-w-6xl mx-auto px-6">
